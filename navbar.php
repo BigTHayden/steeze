@@ -11,9 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Steeze App</title>
+
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
         :root {
             --bg-color: #081b29;
@@ -22,8 +26,15 @@
             --main-color: #00abf0;
         }
 
+        .company {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
         .h3 {
             color: var(--bg-color);
+
         }
 
         .span {
@@ -33,16 +44,15 @@
 </head>
 
 <body>
-    <div class="company">
-        <!-- <h3>Operate in <span>STEEZE</span></h3> -->
+    
+    <!-- <div class="company">
+        <h3>Operate in <span>STEEZE</span></h3>
+    </div> -->
 
-    </div>
     <div class="d-flex justify-content-center my-5 bg-dark p-3">
         <a href="index.php" class="btn btn-light me-2">Register</a>
         <a href="login.php" class="btn btn-light me-2">Login</a>
-        <a href="deposit.php" class="btn btn-light me-2">Deposit</a>
-        <a class="btn btn-light me-2">Withdraw</a>
-        <a class="btn btn-light me-2">History</a>
+        <a href="dashboard.php" class="btn btn-light me-2">Dashboard</a>
     </div>
 </body>
 
