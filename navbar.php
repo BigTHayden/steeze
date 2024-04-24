@@ -27,30 +27,35 @@
         }
 
         .company {
+            display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
+            margin: auto;
         }
 
         .h3 {
             color: var(--bg-color);
-
         }
 
         .span {
+            color: var(--main-color);
+        }
+        .a {
             color: var(--main-color);
         }
     </style>
 </head>
 
 <body>
-    
-    <!-- <div class="company">
+
+    <div class="company">
         <h3>Operate in <span>STEEZE</span></h3>
-    </div> -->
+    </div>
+
 
     <div class="d-flex justify-content-center my-5 bg-dark p-3">
-        <a href="index.php" class="btn btn-light me-2">Register</a>
+        <a href="register.php" class="btn btn-light me-2">Register</a>
         <a href="login.php" class="btn btn-light me-2">Login</a>
         <a href="dashboard.php" class="btn btn-light me-2">Dashboard</a>
     </div>
