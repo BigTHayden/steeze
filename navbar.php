@@ -32,6 +32,7 @@
             align-items: center;
             width: 100%;
             margin: auto;
+            padding-top: 2rem;
         }
 
         .h3 {
