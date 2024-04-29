@@ -26,7 +26,7 @@ $sql = "UPDATE customers set balance = '$new_balance' where id = '$user_id'";
 $con->query($sql);
 
 // create the history 
-$sql = "INSERT INTO transactions (customer_id, amount, type, status) VALUES ('$user_id', '$amount', 'credit', 'successful')";
+$sql = "INSERT INTO transactions (customers_id, amount, type, status) VALUES ('$user_id', '$amount', 'Credit', 'Successful')";
 $deposit = $con->query($sql);
 
 

@@ -2,5 +2,5 @@
 
 $con = new mysqli ('localhost', 'root', '', 'steeze');
 
-session_start ();
+session_start();
 ?>

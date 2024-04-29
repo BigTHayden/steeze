@@ -42,6 +42,7 @@
         .span {
             color: var(--main-color);
         }
+
         .a {
             color: var(--main-color);
         }
@@ -55,10 +56,32 @@
     </div>
 
 
+
     <div class="d-flex justify-content-center my-5 bg-dark p-3">
+
+        <?php
+        include 'connection.php';
+        // User is not logged in or registered
+        if ($_SESSION['id'] == null) {
+        ?>
+            <a href="register.php" class="btn btn-light me-2">Register</a>
+            <a href="login.php" class="btn btn-light me-2">Login</a>
+
+        <?php
+            // User is logged in or registered
+        } else {
+        ?>
+            <a href="dashboard.php" class="btn btn-light me-2">Dashboard</a>
+        <?php
+        }
+        ?>
+
+        <!-- 
         <a href="register.php" class="btn btn-light me-2">Register</a>
         <a href="login.php" class="btn btn-light me-2">Login</a>
         <a href="dashboard.php" class="btn btn-light me-2">Dashboard</a>
+ -->
+
     </div>
 </body>
 

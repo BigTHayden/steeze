@@ -28,6 +28,10 @@ $con->query($sql);
 
 
 
+// create the history 
+$sql = "INSERT INTO transactions (customers_id, amount, type, status) VALUES ('$user_id', '$amount', 'Debit', 'Successful')";
+$withdraw = $con->query($sql);
+
 header("location: dashboard.php?message=Withdrawal successful");
 
 ?>
